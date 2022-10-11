@@ -1,0 +1,3 @@
+[submodule "upstream/cueniform/experimental-makefile"]
+	path = upstream/cueniform/experimental-makefile
+	url = https://github.com/cueniform/experimental-makefile.git
