@@ -1,5 +1,8 @@
 resource: {
-	aws_route53_zone: cueniform_com: name: "cueniform.com"
+	aws_route53_zone: cueniform_com: {
+		name: "cueniform.com"
+		lifecycle: prevent_destroy: true
+	}
 	aws_route53_record: {
 		cueniform_com_A: {
 			name:    "cueniform.com"

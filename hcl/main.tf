@@ -1,5 +1,8 @@
 resource "aws_route53_zone" "cueniform_com" {
   name = "cueniform.com"
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "aws_route53_record" "www_cueniform_com_A" {

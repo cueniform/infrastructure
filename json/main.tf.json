@@ -29,6 +29,11 @@
         "aws_route53_zone": {
             "cueniform_com": [
                 {
+                    "lifecycle": [
+                        {
+                            "prevent_destroy": true
+                        }
+                    ],
                     "name": "cueniform.com"
                 }
             ]
